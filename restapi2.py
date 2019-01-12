@@ -13,8 +13,8 @@ tasks = [
     },
     {
         'id': 2,
-        'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web',
+        'title': u'Nice Day',
+        'description': u'This is very nice day today',
         'done': False
     }
 ]
@@ -90,5 +90,5 @@ def delete_task(task_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5200)
 #curl -i http://localhost:5000/todo/api/v1.0/tasks
