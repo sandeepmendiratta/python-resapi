@@ -27,6 +27,10 @@ tasks = [
 #         else:
 #             new_task[field] = task[field]
 #     return new_task
+@app.route('/health', methods=['GET'])
+def get_health():
+    return "ok"
+
 #curl -i http://localhost:5000/todo/api/v1.0/tasks
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
